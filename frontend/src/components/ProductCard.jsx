@@ -7,7 +7,7 @@ import { useProductStore } from '../store/useProductStore';
 function ProductCard({product}) {
   const {deleteProduct}=  useProductStore();
   return (
-    <div className='card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300'>
+    <div className='card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer'>
         {/* Product Image */}
         <figure className='relative pt-[56.25%]'>
             <img src={product.image} alt={product.name} className='absolute top-0 left-0 w-full h-full object-cover'/>

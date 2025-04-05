@@ -5,7 +5,6 @@ import { useThemeStore } from "../store/useThemeStore";
 
 function ThemeSelector() {
   const { theme, setTheme } = useThemeStore();
-  console.log(theme);
   return (
     <div className="dropdown dropdown-end">
       {/* dropdown trigger */}
